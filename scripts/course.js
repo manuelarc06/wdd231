@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { code: "WDD 231", subject: "wdd", credits: 2, completed: false },
     { code: "CSE 110", subject: "cse", credits: 2, completed: true },
     { code: "CSE 111", subject: "cse", credits: 2, completed: true },
-    { code: "CSE 210", subject: "cse", credits: 2, completed: true }
+    { code: "CSE 210", subject: "cse", credits: 2, completed: false }
   ];
 
   const courseList = document.querySelector("#course-list");
