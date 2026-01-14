@@ -1,0 +1,23 @@
+{
+    "family_name": "Santos",
+    "move_in_date": "2001-03-12",
+    "number_of_people": 3,
+    "visited_by_the_bishop": true,
+    "family_member": [
+        {
+            "name": "James Smith",
+            "gender": "Male",
+            "birthday": "1997-07-04"
+        },
+        {
+            "name": "Rosa Smith",
+            "gender": "Female",
+            "birthday": "1998-02-09"
+        },
+        {
+            "name": "Alma Smith",
+            "gender": "Female",
+            "birthday": "2024-05-09"
+        }
+    ]
+}
