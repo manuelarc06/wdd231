@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Café de Colombia Export",
+        "address": "Cra 7 #32-16, Bogotá, Colombia",
+        "phone": "+57 1 555 1234",
+        "website": "https://cafedecolombia.com",
+        "image": "cafe.webp",
+        "membership": 3,
+        "description": "Export and Promotion of Colombian Coffee."
+    },
+    {
+        "name": "Bancolombia",
+        "address": "Cl 50 #48-20, Medellín, Colombia",
+        "phone": "+57 4 555 5678",
+        "website": "https://www.bancolombia.com",
+        "image": "bancolombia.webp",
+        "membership": 3,
+        "description": "Financial and Banking Services."
+    },
+    {
+        "name": "Grupo Nutresa",
+        "address": "Cra 43A #1A Sur-143, Medellín, Colombia",
+        "phone": "+57 4 555 3344",
+        "website": "https://gruponutresa.com",
+        "image": "nutresa.webp",
+        "membership": 2,
+        "description": "Food and Fast Moving Consumer Goods Industry."
+    },
+    {
+        "name": "Avianca",
+        "address": "Av El Dorado #59-15, Bogotá, Colombia",
+        "phone": "+57 1 555 8899",
+        "website": "https://www.avianca.com",
+        "image": "avianca.webp",
+        "membership": 3,
+        "description": "Colombian International Airline."
+    },
+    {
+        "name": "Rappi",
+        "address": "Cra 13 #93-40, Bogotá, Colombia",
+        "phone": "+57 1 555 7788",
+        "website": "https://www.rappi.com.co",
+        "image": "rappi.webp",
+        "membership": 2,
+        "description": "Delivery and Digital Services Platform."
+    },
+    {
+        "name": "Postobón",
+        "address": "Cl 58 #55-24, Medellín, Colombia",
+        "phone": "+57 4 555 9988",
+        "website": "https://www.postobon.com",
+        "image": "postobon.webp",
+        "membership": 1,
+        "description": "Colombian Beverages and Soft Drinks."
+    },
+    {
+        "name": "Juan Valdez Café",
+        "address": "Cl 73 #8-60, Bogotá, Colombia",
+        "phone": "+57 1 555 4433",
+        "website": "https://www.juanvaldezcafe.com",
+        "image": "juanvaldez.webp",
+        "membership": 2,
+        "description": "Colombian Coffee Shop Chain."
+    }
+]

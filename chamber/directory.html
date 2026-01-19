@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the Colombia Chamber of Commerce business directory, connecting local companies, services, and organizations to promote economic growth and community development.">
+    <meta name="author" content="Manuela Alejandra Rodríguez Cárdenas">
+    <title>Colombia Chamber of Commerce | Directory</title>
+
+    <link rel="icon" href="images/icon.svg">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Arbutus+Slab&family=Bree+Serif&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WDD 231 Home Page">
+    <meta property="og:description" content="Explore the Colombia Chamber of Commerce business directory. Discover local companies, services, and organizations that support economic development and strengthen the business community. Connect with trusted members across Colombia.">
+    <meta property="og:image" content="https://manuelarc06.github.io/wdd231/chamber/images/colombia.webp">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="315">
+    <meta property="og:url" content="https://manuelarc06.github.io/wdd231/chamber/directory.html">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-left">
+            <img src="images/logo.svg" alt="Colombia Chamber Logo" class="logo">
+            <h1>Colombia Chamber of Commerce</h1>
+        </div>
+
+        <button id="menu-button" aria-label="Toggle Menu">
+            &#9776;
+        </button>
+
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-title">
+            <h2>Business Directory</h2>
+            <div class="view-buttons">
+                <img src="images/icon2.svg" alt="Grid view" id="gridView">
+                <img src="images/icon3.svg" alt="List view" id="listView">
+            </div>
+        </section>
+
+        <section id="members" class="grid-view"></section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+
+            <div class="footer-left">
+                <h3>Colombia Chamber of Commerce</h3>
+                <p>Street 16 #30-24</p>
+                <p>Colombia, Mail 123</p>
+                <p>colombiachamberofcommerce@gmail.com</p>
+            </div>
+
+            <div class="footer-center">
+                <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="YouTube"></a>
+                <a href="https://x.com/"><img src="images/twitter.svg" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+
+            <div class="footer-right">
+                <p>WDD231 Class Project</p>
+                <p>Manuela Alejandra Rodríguez Cárdenas</p>
+                <p>©2026 Colombia Chamber of Commerce</p>
+                <p>Last modification: <span id="lastModified"></span></p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

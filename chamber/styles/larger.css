@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+    
+    .header-nav {
+        display: block !important; 
+        position: static;           
+        width: auto;
+        background: none;
+    }
+
+    .header-nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2.3rem;
+    }
+
+    .header-nav li {
+        border: none;
+        padding: 0;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    #members.grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 0 3rem
+    }
+
+    .footer-left,
+    .footer-right {
+        max-width: 300px;
+    }
+
+    .footer-center {
+        justify-content: center;
+    }
+}
