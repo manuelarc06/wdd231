@@ -206,6 +206,216 @@ header.site-header * {
     text-decoration: underline;
 }
 
+.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-btn {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: linear-gradient(135deg, #f7c600, #ff9f1c);
+    color: #0a2a66;
+    padding: 0.9rem 1.6rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    font-family: "Bree Serif", serif;
+}
+
+.hero-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #ffd84d, #ffb347);
+}
+
+.home-title {
+    padding: 2rem 1.5rem 1rem;
+    text-align: left;
+}
+
+.home-title h2 {
+    font-size: 2.3rem;
+    color: #082253;
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+}
+
+.home-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    border-top: 6px solid #0a2a66;
+}
+
+.card h3 {
+    color: #0a2a66;
+    margin-bottom: 1rem;
+    font-family: "Bree Serif", serif;
+    font-size: 1.3rem;
+}
+
+.events-list {
+    list-style: none;
+}
+
+.events-list li {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.current-weather {
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+}
+
+.weather-icon {
+    order: 1;
+}
+
+.weather-info {
+    order: 2;
+}
+
+.weather-info p {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.weather-temp {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #0a2a66;
+}
+
+.weather-desc {
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.weather-icon img {
+    width: 80px;
+    height: auto;
+}
+
+/* FORECAST */
+.forecast-list {
+    list-style: none;
+    font-size: 0.95rem;
+}
+
+.forecast-list li {
+    margin-bottom: 0.5rem;
+}
+
+.spotlights {
+    padding: 2rem 1.5rem;
+}
+
+.spotlight-title {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
+    color: #0a2a66;
+    font-family: "Bree Serif", serif;
+}
+
+.spotlight-body {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.spotlight-img img {
+    max-width: 90px;
+    height: auto;
+}
+
+.spotlight-info {
+    margin-left: 3rem;
+}
+
+
+.spotlight-info p {
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+}
+
+.spotlight-info a {
+    display: inline-block;
+    margin-top: 0.4rem;
+    color: #0a2a66;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.spotlight-info a:hover {
+    text-decoration: underline;
+}
+
+.spotlight-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.spotlight-card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    border-top: 6px solid #f7c600;
+}
+
+.spotlight-card img {
+    max-width: 120px;
+    margin-bottom: 1rem;
+}
+
+.spotlight-card h3 {
+    color: #0a2a66;
+    margin-bottom: 0.5rem;
+}
+
+.spotlight-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.spotlight-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #0a2a66;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline;
+}
+
 .site-footer {
     background-color: #0a2a66;
     color: white;

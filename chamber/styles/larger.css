@@ -26,6 +26,29 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .home-cards {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem 3rem;
+    }
+
+    .spotlight-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }   
+
+    .spotlight-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .spotlight-info {
+        margin-left: 1.5rem; 
+    }
+
+    .spotlight-img img {
+        max-width: 110px;
+    }
+
     .footer-content {
         flex-direction: row;
         justify-content: space-between;
