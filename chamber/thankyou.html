@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the Colombia Chamber of Commerce directory to connect local businesses, services, and organizations that support economic growth.">
+    <meta name="description" content="Thank you for joining the Colombia Chamber of Commerce. Review the information you submitted and return to the Join page.">
     <meta name="author" content="Manuela Alejandra Rodríguez Cárdenas">
-    <title>Colombia Chamber of Commerce | Directory</title>
+    <title>Colombia Chamber of Commerce | Thank You</title>
 
     <link rel="icon" href="images/icon.svg">
 
@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,23 +41,33 @@
         <nav class="header-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="page-title">
-            <h2>Business Directory</h2>
-            <div class="view-buttons">
-                <img src="images/icon2.svg" alt="Grid view" id="gridView">
-                <img src="images/icon3.svg" alt="List view" id="listView">
-            </div>
-        </section>
+    <main class="thankyou-page">
+         <div class="thankyou-container">
+            <h2 class="section-title">Thank You for Joining!</h2>
+            <p>We appreciate you taking the time to complete the membership form. Here's a summary of the information you submitted:</p>
 
-        <section id="members" class="grid-view"></section>
+            <div class="submitted-info">
+                <p><strong>First Name:</strong> <span id="display-fname"></span></p>
+                <p><strong>Last Name:</strong> <span id="display-lname"></span></p>
+                <p><strong>Email:</strong> <span id="display-email"></span></p>
+                <p><strong>Mobile Phone:</strong> <span id="display-phone"></span></p>
+                <p><strong>Business Name:</strong> <span id="display-business"></span></p>
+                <p><strong>Submitted At:</strong> <span id="display-timestamp"></span></p>
+                
+            </div>
+
+            <div class="return-btn-container">
+                <a href="join.html" class="submit-btn">Return to Join Page</a>
+            </div>
+        </div>
     </main>
+
     <footer class="site-footer">
         <div class="footer-content">
 

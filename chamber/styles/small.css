@@ -427,6 +427,286 @@ header.site-header * {
     text-decoration: underline;
 }
 
+.join-page {
+    width: 100%;
+}
+
+.join-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.form-section {
+    width: 100%;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    color: #0a2a66;
+    margin-bottom: 1rem;
+    font-family: "Bree Serif", serif;
+    text-align: left;
+}
+
+.join-form {
+    margin: 0;     
+    padding: 0;       
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    max-width: 490px;
+    width: 100%;
+    border: 1px solid #585858;
+    border-radius: 6px;
+}
+
+.form-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.submit-btn {
+    margin-top: 1rem;
+    padding: 0.7rem 1.8rem;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(135deg, #0a2a66, #133f9c);
+    color: #ffffff;
+    font-family: "Bree Serif", serif;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 490px;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #ff9f1c, #f7c600);
+    color: #0a2a66;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+}
+
+.submit-btn:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.submit-btn:focus-visible {
+    outline: 3px solid #ff9f1c;
+    outline-offset: 3px;
+}
+
+.membership-section .section-title {
+    font-size: 1.6rem;
+    color: #0a2a66;
+    margin-bottom: 1rem;
+    font-family: "Bree Serif", serif;
+    text-align: left; 
+}
+
+.membership-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.6rem; /* espacio entre los cuadros */
+    width: 100%;
+}
+
+.membership-card h3 {
+    color: #0a2a66;
+    margin-bottom: 0.5rem;
+}
+
+.membership-card p {
+    margin-bottom: 0.4rem;
+    color: #1f1e1e;
+}
+
+.benefits-btn {
+    margin-top: 0.4rem;
+    align-self: center;
+    padding: 0.55rem 1.6rem;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(135deg, #0a2a66, #133f9c);
+    color: #ffffff;
+    font-family: "Bree Serif", serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.benefits-btn:hover {
+    background: linear-gradient(135deg, #ff9f1c, #f7c600);
+    color: #0a2a66;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+}
+
+.benefits-btn:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.benefits-btn:focus-visible {
+    outline: 3px solid #ff9f1c;
+    outline-offset: 3px;
+}
+
+.membership-modal {
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+    position: fixed; /* Para centrarlo */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001; /* Encima de todo */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.membership-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.membership-modal h3 {
+    color: #0a2a66;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.membership-modal ul {
+    padding-left: 1.2rem;
+    list-style-type: disc;
+    color: #1b1a1a;
+}
+
+.membership-modal button {
+    padding: 0.6rem 1.2rem;
+    background-color: #0a2a66;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background 0.3s ease;
+}
+
+.membership-modal button:hover {
+    background-color: #ff9f1c;
+    color: #0a2a66;
+}
+
+.membership-modal:not([open]) {
+    display: none;
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.thankyou-page {
+    padding: 2rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.thankyou-container {
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.thankyou-page .submitted-info {
+    margin-top: 1.5rem; /* aumenta el espacio entre el párrafo y los datos */
+}
+
+.submitted-info p {
+    text-align: left;
+    margin-bottom: 0.7rem;
+    font-size: 0.95rem;
+    color: #1b1a1a;
+}
+
+.submitted-info strong {
+    color: #0a2a66;
+}
+
+.return-btn-container {
+    margin-top: 1.8rem; 
+    text-align: center;
+}
+
+.return-btn-container .submit-btn {
+    display: inline-block;
+    width: auto;
+    padding: 0.9rem 1.6rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    background: linear-gradient(135deg, #f7c600, #ff9f1c);
+    color: #0a2a66;
+    font-family: "Bree Serif", serif;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.return-btn-container .hero-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: linear-gradient(135deg, #ffd84d, #ffb347);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
 .site-footer {
     background-color: #0a2a66;
     color: white;

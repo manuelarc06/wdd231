@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Colombia Chamber of Commerce and connect with local businesses. Apply for membership to access events, networking, and exclusive benefits.">
+    <meta name="author" content="Manuela Alejandra Rodríguez Cárdenas">
+    <title>Colombia Chamber of Commerce | Join</title>
+
+    <link rel="icon" href="images/icon.svg">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Arbutus+Slab&family=Bree+Serif&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WDD 231 Home Page">
+    <meta property="og:description" content="The Colombia Chamber of Commerce directory helps you connect with local businesses and services. Discover organizations supporting economic growth in Colombia.">
+    <meta property="og:image" content="https://manuelarc06.github.io/wdd231/chamber/images/colombia.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://manuelarc06.github.io/wdd231/chamber/directory.html">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-left">
+            <img src="images/logo.svg" alt="Colombia Chamber Logo" class="logo">
+            <h1>Colombia Chamber of Commerce</h1>
+        </div>
+
+        <button id="menu-button" aria-label="Toggle Menu">
+            &#9776;
+        </button>
+
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="join-page">
+
+        <div class="join-container">
+
+            <div class="form-section">
+                <h2 class="section-title">Membership Application Form</h2>
+                <div class="form-card">
+                    <form method="get" action="thankyou.html" class="join-form">
+
+                        <label>
+                            First Name
+                            <input type="text" name="fname" required autocomplete="given-name">
+                        </label>
+
+                        <label>
+                            Last Name
+                            <input type="text" name="lname" required autocomplete="family-name">
+                        </label>
+
+                        <label>
+                            Organizational Title
+                            <input type="text" name="orgtitle"
+                                autocomplete="organization-title"
+                                pattern="[A-Za-z\- ]{7,}">
+                        </label>
+
+                        <label>
+                            Email Address
+                            <input type="email" name="email" required
+                                autocomplete="email"
+                                placeholder="example@email.com">
+                        </label>
+
+                        <label>
+                            Mobile Phone
+                            <input type="tel" name="phone" required autocomplete="tel">
+                        </label>
+
+                        <label>
+                            Organization Name
+                            <input type="text" name="business" required autocomplete="organization">
+                        </label>
+
+                        <label>
+                            Membership Level
+                            <select name="membership" required>
+                                <option value="">Select a level</option>
+                                <option value="np">NP Membership</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            Business Description
+                            <textarea name="description"></textarea>
+                        </label>
+
+                        <input type="hidden" id="timestamp" name="timestamp">
+
+                        <button type="submit" class="submit-btn">Join Now</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="membership-section">
+                <h2 class="section-title">Membership Levels</h2>
+                <div class="membership-cards">
+                    <div class="membership-card animate">
+                        <h3>NP Membership</h3>
+                        <p>No fee - Non-profit organizations</p>
+                        <button onclick="openModal('goldModal')" class="benefits-btn">View Benefits</button>
+                    </div>
+
+                    <div class="membership-card animate">
+                        <h3>Bronze Membership</h3>
+                        <p>Basic exposure & events</p>
+                        <button onclick="openModal('goldModal')" class="benefits-btn">View Benefits</button>
+                    </div>
+
+                    <div class="membership-card animate">
+                        <h3>Silver Membership</h3>
+                        <p>Advertising & training</p>
+                        <button onclick="openModal('goldModal')" class="benefits-btn">View Benefits</button>
+                    </div>
+
+                    <div class="membership-card animate">
+                        <h3>Gold Membership</h3>
+                        <p>Maximum visibility & perks</p>
+                        <button onclick="openModal('goldModal')" class="benefits-btn">View Benefits</button>
+                    </div>
+                </div>
+            </div>
+
+            <dialog id="npModal" class="membership-modal">
+                <h3>NP Membership Benefits</h3>
+                <ul>
+                    <li>Access to non-profit events</li>
+                    <li>Networking opportunities</li>
+                    <li>Basic directory listing</li>
+                </ul>
+                <button onclick="this.closest('dialog').close()">Close</button>
+            </dialog>
+
+            <dialog id="bronzeModal" class="membership-modal">
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                    <li>All NP benefits</li>
+                    <li>Basic advertising on the website</li>
+                    <li>Invitation to networking events</li>
+                </ul>
+                <button onclick="this.closest('dialog').close()">Close</button>
+            </dialog>
+
+            <dialog id="silverModal" class="membership-modal">
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Training sessions</li>
+                    <li>Spotlight feature on home page</li>
+                    <li>Discounts on events</li>
+                </ul>
+                <button onclick="this.closest('dialog').close()">Close</button>
+            </dialog>
+
+            <dialog id="goldModal" class="membership-modal">
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Maximum visibility on website</li>
+                    <li>Priority access to special events</li>
+                    <li>Exclusive perks and recognition</li>
+                </ul>
+                <button onclick="this.closest('dialog').close()">Close</button>
+            </dialog>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+
+            <div class="footer-left">
+                <h3>Colombia Chamber of Commerce</h3>
+                <p>Street 16 #30-24</p>
+                <p>Colombia, Mail 123</p>
+                <p>colombiachamberofcommerce@gmail.com</p>
+            </div>
+
+            <div class="footer-center">
+                <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="YouTube"></a>
+                <a href="https://x.com/"><img src="images/twitter.svg" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+
+            <div class="footer-right">
+                <p>WDD231 Class Project</p>
+                <p>Manuela Alejandra Rodríguez Cárdenas</p>
+                <p>©2026 Colombia Chamber of Commerce</p>
+                <p>Last modification: <span id="lastModified"></span></p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
