@@ -57,55 +57,34 @@
                 <div class="form-card">
                     <form method="get" action="thankyou.html" class="join-form">
 
-                        <label>
-                            First Name
-                            <input type="text" name="fname" required autocomplete="given-name">
+                        <label> First Name
+                            <input type="text" name="fname" required autocomplete="given-name" title="Enter your first name">
                         </label>
 
-                        <label>
-                            Last Name
-                            <input type="text" name="lname" required autocomplete="family-name">
+                        <label> Last Name
+                            <input type="text" name="lname" required autocomplete="family-name" title="Enter your last name">
                         </label>
 
-                        <label>
-                            Organizational Title
-                            <input type="text" name="orgtitle"
-                                autocomplete="organization-title"
-                                pattern="[A-Za-z\- ]{7,}">
+                        <label> Organizational Title
+                            <input type="text" name="orgtitle" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" title="Enter your job or organizational title">
                         </label>
 
-                        <label>
-                            Email Address
-                            <input type="email" name="email" required
-                                autocomplete="email"
-                                placeholder="example@email.com">
+                        <label> Email Address
+                            <input type="email" name="email" required autocomplete="email" placeholder="example@email.com" title="Enter your email address">
                         </label>
 
-                        <label>
-                            Mobile Phone
-                            <input type="tel" name="phone" required autocomplete="tel">
+                        <label> Mobile Phone
+                            <input type="tel" name="phone" required autocomplete="tel" title="Enter your mobile phone number">
                         </label>
 
-                        <label>
-                            Organization Name
-                            <input type="text" name="business" required autocomplete="organization">
+                        <label> Organization Name
+                            <input type="text" name="business" required autocomplete="organization" title="Enter your organization or business name">
                         </label>
 
-                        <label>
-                            Membership Level
-                            <select name="membership" required>
-                                <option value="">Select a level</option>
-                                <option value="np">NP Membership</option>
-                                <option value="bronze">Bronze Membership</option>
-                                <option value="silver">Silver Membership</option>
-                                <option value="gold">Gold Membership</option>
-                            </select>
+                        <label> Business Description
+                            <textarea name="description" title="Provide a brief description of your organization"></textarea>
                         </label>
 
-                        <label>
-                            Business Description
-                            <textarea name="description"></textarea>
-                        </label>
 
                         <input type="hidden" id="timestamp" name="timestamp">
 
@@ -120,25 +99,25 @@
                     <div class="membership-card animate">
                         <h3>NP Membership</h3>
                         <p>No fee - Non-profit organizations</p>
-                        <button onclick="openModal('goldModal')" class="benefits-btn">View Benefits</button>
+                        <button class="benefits-btn" data-modal="goldModal">View Benefits</button>
                     </div>
 
                     <div class="membership-card animate">
                         <h3>Bronze Membership</h3>
                         <p>Basic exposure & events</p>
-                        <button onclick="openModal('goldModal')" class="benefits-btn">View Benefits</button>
+                        <button class="benefits-btn" data-modal="goldModal">View Benefits</button>
                     </div>
 
                     <div class="membership-card animate">
                         <h3>Silver Membership</h3>
                         <p>Advertising & training</p>
-                        <button onclick="openModal('goldModal')" class="benefits-btn">View Benefits</button>
+                        <button class="benefits-btn" data-modal="goldModal">View Benefits</button>
                     </div>
 
                     <div class="membership-card animate">
                         <h3>Gold Membership</h3>
                         <p>Maximum visibility & perks</p>
-                        <button onclick="openModal('goldModal')" class="benefits-btn">View Benefits</button>
+                        <button class="benefits-btn" data-modal="goldModal">View Benefits</button>
                     </div>
                 </div>
             </div>
