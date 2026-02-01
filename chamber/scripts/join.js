@@ -17,6 +17,15 @@ benefitsButtons.forEach(button => {
   });
 });
 
+const closeButtons = document.querySelectorAll(".membership-modal .close-btn");
+
+closeButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const modal = button.closest("dialog");
+    modal.close();
+  });
+});
+
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
 

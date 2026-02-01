@@ -572,7 +572,7 @@ header.site-header * {
 
 .benefits-btn:hover {
     background: linear-gradient(135deg, #ff9f1c, #f7c600);
-    color: #0a2a66;
+    color:  #0a2a66;
     transform: translateY(-3px) scale(1.03);
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
 }
@@ -669,7 +669,7 @@ header.site-header * {
 }
 
 .thankyou-page .submitted-info {
-    margin-top: 1.5rem; /* aumenta el espacio entre el párrafo y los datos */
+    margin-top: 1.5rem; 
 }
 
 .submitted-info p {
