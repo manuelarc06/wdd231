@@ -12,7 +12,7 @@ const benefitsButtons = document.querySelectorAll(".benefits-btn");
 
 benefitsButtons.forEach(button => {
   button.addEventListener("click", () => {
-    const modalId = button.getAttribute("data-modal"); // Usaremos data-modal
+    const modalId = button.getAttribute("data-modal"); 
     openModal(modalId);
   });
 });
@@ -35,7 +35,7 @@ function openModal(modalId) {
 
     window.scrollTo({
         top: scrollY,
-        behavior: "instant"
+        behavior: "auto"
     });
 }
 
