@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #13477a; 
+    background-color: #0e3153; 
     color: white;
     text-align: center;
     padding: 40px 20px; 
@@ -51,7 +51,7 @@ section:hover {
 }
 
 h1, h2 {
-    color: #13477a;
+    color: #0e3153;
 }
 
 h2 {
@@ -60,7 +60,7 @@ h2 {
 }
 
 h3 {
-    color: #13477a;
+    color: #0e3153;
     margin-top: 20px;
     font-size: 1.4em;
 }
@@ -79,13 +79,13 @@ li {
 
 img {
     max-width: 100%;
-    border: 2px solid #13477a;
+    border: 2px solid #0e3153;
     border-radius: 5px;
     margin-top: 10px;
 }
 
 footer {
-    background-color: #13477a; 
+    background-color: #0e3153; 
     color: white;
     text-align: center;
     padding: 20px;
