@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #1e90ff; 
+    background-color: #13477a; 
     color: white;
     text-align: center;
     padding: 40px 20px; 
@@ -51,7 +51,7 @@ section:hover {
 }
 
 h1, h2 {
-    color: #1e90ff;
+    color: #13477a;
 }
 
 h2 {
@@ -60,7 +60,7 @@ h2 {
 }
 
 h3 {
-    color: #1e90ff;
+    color: #13477a;
     margin-top: 20px;
     font-size: 1.4em;
 }
@@ -79,13 +79,13 @@ li {
 
 img {
     max-width: 100%;
-    border: 2px solid #1e90ff;
+    border: 2px solid #13477a;
     border-radius: 5px;
     margin-top: 10px;
 }
 
 footer {
-    background-color: #1e90ff; 
+    background-color: #13477a; 
     color: white;
     text-align: center;
     padding: 20px;
