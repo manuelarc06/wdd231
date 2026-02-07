@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     
 
-    <script src="scripts/discover.js" type="module" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
     <script src="scripts/visits.js" defer></script>
     <script src="scripts/dates.js" defer></script>
 
@@ -52,17 +52,16 @@
     </header>
     <main>
         <h2 class="discover-title">Discover Colombia</h2>
-        <section id="visit-message" class="visit-message">
+        <div id="visit-message" class="visit-message">
             <button class="close-visit" aria-label="Close message">✕</button>
             <span id="visit-text"></span>
-        </section>
+        </div>
 
-        <section class="discover-grid" id="discoverGrid">
-        </section>
+        <div class="discover-grid" id="discoverGrid"></div>
 
         <div id="discover-modal" class="discover-modal">
             <div class="modal-content">
-                <h2 id="modal-title"></h2>
+                <h2 id="modal-title">Place details</h2>
                 <p id="modal-cost"></p>
                 <p id="modal-description"></p>
                 <button id="close-modal">Close</button>
