@@ -210,7 +210,8 @@ body {
 }
 
 .weather-card {
-    background: linear-gradient(135deg, #0e3153, #1d5c8f);
+    background-color: #0e3153;
+    background-image: linear-gradient(135deg, #0e3153, #1d5c8f);
     color: white;
 }
 
