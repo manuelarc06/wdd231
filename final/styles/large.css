@@ -1,0 +1,70 @@
+@media screen and (min-width: 768px) {
+    .site-header {
+        flex-wrap: nowrap;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    .header-nav {
+        display: block;
+        width: auto;
+        background: none;
+    }
+
+    .header-nav ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .header-nav li {
+        border: none;
+    }
+
+    .header-nav a {
+        padding: 0.5rem;
+    }
+
+    .header-nav a:hover {
+        background: none;
+        text-decoration: underline;
+    }
+
+    .info-section {
+        flex-direction: row;
+    }
+
+    .card {
+        flex: 1;
+    }
+
+
+    /* FOOTER */
+    .footer-content {
+        flex-direction: row;    
+        justify-content: space-between; 
+        text-align: left;   
+    }
+
+    .footer-left {
+        text-align: left;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        flex: 1;   
+    }
+
+    .footer-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-right {
+        text-align: right;
+    }
+
+}

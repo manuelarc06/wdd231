@@ -18,7 +18,7 @@ async function getMembers() {
         const response = await fetch("data/members.json");
         const data = await response.json();
         membersData = data;
-        displayGrid(membersData); // vista por defecto
+        displayGrid(membersData);
     } catch (error) {
         console.error("Error loading members:", error);
     }
