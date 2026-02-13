@@ -88,6 +88,7 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
+    background-color: #000;
 }
 
 .hero img {
@@ -117,6 +118,7 @@ body {
     max-width: 500px;
     z-index: 1;
 }
+
 
 .hero-content h2 {
     font-size: 2rem;
