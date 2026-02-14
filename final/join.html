@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Manuela Alejandra Rodríguez Cárdenas"> 
+    <meta name="description" content="Blue Wave Swimming Club - Professional swim training programs for all ages.">
+    <title>Blue Wave Swimming Club | Join</title>
+
+    <link rel="icon" href="images/sunglasses.svg">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blue Wave Swimming Club | Professional Swim Training">
+    <meta property="og:description" content="Professional swim training for all ages. Join Blue Wave Swimming Club and build strength, confidence, and competitive skills in a supportive community.">
+    <meta property="og:image" content="https://manuelarc06.github.io/wdd231/final/images/swimmingclub.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://manuelarc06.github.io/wdd231/final/index.html">
+    <meta property="og:locale" content="en_US">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-left">
+            <img src="images/logo.svg" alt="Blue Wave Swimming Club Logo" class="logo">
+            <h1>Blue Wave Swimming Club</h1>
+        </div>
+
+        <button id="menu-button" aria-label="Toggle Menu">
+            &#9776;
+        </button>
+
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <section class="join-container">
+            <div class="join-form">
+                <h2>Join Blue Wave Swimming Club</h2>
+                <form id="membership-form" action="thankyou.html" method="get">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="5" max="99" required>
+
+                    <label for="program">Preferred Program</label>
+                    <select id="program" name="program" required>
+                        <option value="">Select a program</option>
+                        <option value="beginner">Beginner Swim</option>
+                        <option value="intermediate">Intermediate Swim</option>
+                        <option value="competitive">Competitive Swim</option>
+                    </select>
+
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Any special requests?"></textarea>
+
+                    <button type="submit" class="join-button">Join Now</button>
+                </form>
+            </div>
+
+            <div class="join-gallery">
+                <h2>Our Club Moments</h2>
+                <div class="gallery-moments">
+                    <div class="moment-card">
+                        <img src="images/swim1.webp" alt="Swimming pool action 1" loading="lazy">
+                        <div class="moment-info">
+                            <h3>Swim Practice 1</h3>
+                            <p>Our swimmers had a fun and challenging session focusing on endurance and technique. Everyone improved their lap times!</p>
+                        </div>
+                    </div>
+
+                    <div class="moment-card">
+                        <img src="images/swim2.webp" alt="Swimming pool action 2" loading="lazy">
+                        <div class="moment-info">
+                            <h3>Team Relay</h3>
+                            <p>During the weekly relay competition, teamwork and strategy were key. Swimmers cheered each other on!</p>
+                        </div>
+                    </div>
+
+                    <div class="moment-card">
+                        <img src="images/swim3.webp" alt="Swimming pool action 3" loading="lazy">
+                        <div class="moment-info">
+                            <h3>Summer Splash</h3>
+                            <p>Our summer event was full of fun games and swimming drills. Families and kids enjoyed the pool activities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="welcome-toast" class="welcome-toast">
+                <span>Welcome to Blue Wave Swimming Club!</span>
+                <button class="toast-close" aria-label="Close">×</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+
+            <div class="footer-left">
+                <h3>Blue Wave Swimming Club</h3>
+                <p>Street 21 #11-23</p>
+                <p>Colombia, Mail 678</p>
+                <p>bluewaveswimclub@gmail.com</p>
+            </div>
+
+            <div class="footer-center">
+                <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="YouTube chanel of Blue Wave Swimming Club"></a>
+                <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Blue Wave Swimming Club on Instagram"></a>
+                <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="Blue Wave Swimming Club on LinkedIn"></a>
+            </div>
+
+            <div class="footer-right">
+                <p>WDD231 Final Project</p>
+                <p>Manuela Alejandra Rodríguez Cárdenas</p>
+                <p>©<span id="year"></span> Blue Wave Swimming Club</p>
+                <p>Last modification: <span id="lastModified"></span></p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

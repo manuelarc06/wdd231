@@ -51,9 +51,57 @@
         width: 40%;
         height: auto;
     }
-    
+
     .program-card .program-info {
         width: 60%;
+    }
+
+    .join-container {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .join-form, .join-gallery {
+        flex: 1;
+    }
+
+    .gallery-images {
+        flex-direction: column;
+    }
+
+    .gallery-images img {
+        margin-bottom: 1rem;
+    }
+
+    .moment-card {
+        flex-direction: row; 
+    }
+
+    .moment-card img {
+        width: 40%; 
+        height: auto;
+    }
+
+    .thankyou-container {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    .thankyou-container h1 {
+        font-size: 1.6rem;
+    }
+
+    .thankyou-container p {
+        font-size: 0.95rem;
+    }
+
+    #form-data li {
+        font-size: 0.9rem;
+    }
+
+    .home-button {
+        padding: 0.7rem 1.4rem;
+        font-size: 0.95rem;
     }
 
     /* FOOTER */

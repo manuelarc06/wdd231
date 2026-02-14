@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Manuela Alejandra Rodríguez Cárdenas"> 
     <meta name="description" content="Blue Wave Swimming Club - Professional swim training programs for all ages.">
-    <title>Blue Wave Swimming Club | Programs</title>
+    <title>Blue Wave Swimming Club | Thank You</title>
 
     <link rel="icon" href="images/sunglasses.svg">
 
@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="styles/large.css">
 
     <script src="scripts/home.js" defer></script>
-    <script src="scripts/programs.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Blue Wave Swimming Club | Professional Swim Training">
@@ -31,7 +32,7 @@
 <body>
     <header class="site-header">
         <div class="header-left">
-            <img src="images/logo.svg" alt="Blue Wave Swimming Club Logo" class="logo" width="40" height="40">
+            <img src="images/logo.svg" alt="Blue Wave Swimming Club Logo" class="logo">
             <h1>Blue Wave Swimming Club</h1>
         </div>
 
@@ -42,37 +43,20 @@
         <nav class="header-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="programs.html" class="active">Programs</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="programs-section">
-        <h2 class="programs-title">Available Programs</h2>
-        <div class="programs-container" id="programs-container">
-
+    <main>
+        <div class="thankyou-container">
+            <h1>🎉 Thank You for Joining Blue Wave! 🎉</h1>
+            <p>We're thrilled to have you on board. Here's the information you submitted:</p>
+            <div id="form-data"></div>
+            <a href="index.html" class="home-button">Return Home</a>
         </div>
-
-        <!-- Modal -->
-        <div id="program-modal" class="modal" aria-hidden="true">
-            <div class="modal-content" role="dialog" aria-modal="true">
-                <button class="close-button" aria-label="Close modal">&times;</button>
-
-                <h3 id="modal-title"></h3>
-                <p id="modal-description"></p>
-
-                <div class="modal-details">
-                    <p><strong>Duration:</strong> <span id="modal-duration"></span></p>
-                    <p><strong>Level:</strong> <span id="modal-level"></span></p>
-                    <p><strong>Schedule:</strong> <span id="modal-schedule"></span></p>
-                    <p><strong>Price:</strong> <span id="modal-price"></span></p>
-                </div>
-            </div>
-        </div>
-
     </main>
-
 
     <footer class="site-footer">
         <div class="footer-content">
