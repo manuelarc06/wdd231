@@ -15,7 +15,11 @@ async function loadPrograms() {
             card.className = "program-card";
 
             card.innerHTML = `
-                <img src="${program.image}" alt="${program.title}">
+                <img src="${program.image}" 
+                    alt="${program.title}" 
+                    width="400" 
+                    height="250"
+                    loading="lazy">
                 <div class="program-info">
                     <h3>${program.title}</h3>
                     <p>${program.description}</p>
