@@ -315,6 +315,7 @@ body {
     position: fixed;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
+    color: inherit;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
