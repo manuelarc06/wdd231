@@ -561,6 +561,61 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
+.references-section {
+    background-color: white; 
+    color: black;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.references-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0e3153;
+}
+
+.references-section p {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: black;
+}
+
+.references-section a {
+    color: #0e3153; 
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.references-section a:hover {
+    color: #ffd700; 
+}
+
+.info-section .card a {
+    color: #0e3153; 
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.info-section .card a:hover {
+    color: #ffd700; 
+}
+
+.info-section .card ul {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    list-style-type: disc;
+}
+
+.info-section .card li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    color: #333; 
+}
+
 /* FOOTER */
 
 .site-footer {
@@ -597,4 +652,14 @@ body {
 .footer-center a:hover img {
     transform: scale(1.2);        
     filter: brightness(1.5);
+}
+
+.footer-right a {
+    color: #ffd700;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: white;
 }
